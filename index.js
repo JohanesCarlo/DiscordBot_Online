@@ -10,12 +10,4 @@ client.on("ready", () => {
     client.user.setActivity("Hi!")
 });
 
-client.on("message", function(message) {
-    if (message.author.equals(client.user)) return;
-
-    if (message.content === "hi") {
-        message.channel.send("Hello");
-    }
-});
-
 client.login(process.env.TOKEN)
